@@ -84,6 +84,7 @@ input.addEventListener("keydown", (e) => {
 
     if (countWord === 20) {
       alert("ok");
+      // TODO: پاک کردن لغات قبلی
     }
   }
 });
@@ -120,7 +121,6 @@ function checkWord() {
       currentElement = span;
 
       if (currentElement.classList.contains("success")) {
-        console.log("ok exists");
         currentElement.classList.remove("success");
       }
 
