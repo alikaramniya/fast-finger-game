@@ -1,0 +1,52 @@
+#wrapper {
+    width: 900px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+#words {
+    background-color: lightblue;
+    width: 800px;
+    height: 100px;
+    border: 1px solid black;
+    font-size: 30px;
+    text-align: justify;
+    padding: 3px;
+    overflow: hidden;
+}
+
+#typeWord {
+    margin: 25px;
+
+    input {
+       width: 400px; 
+       height: 35px;
+       margin-right: 10px;
+       border-radius: 5px;
+       outline: none;
+       border: none;
+       background-color: lightgray;
+       padding: 5px 10px;
+       font-size: 18px;
+       color: green;
+    }
+
+    #timer {
+        background-color: blue;
+        color: white;
+        padding: 15px;
+        border-radius: 10px;
+    }
+}
+
+.active {
+    background-color: lightgray;
+}
+
+.success {
+    background-color: green;
+}
+
+.danger {
+    background-color: red;
+}
