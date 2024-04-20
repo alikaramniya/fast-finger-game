@@ -72,9 +72,9 @@ function loadWords(key) {
   listWords[key].forEach((word) => {
     createNewElement(word, wordNumber++);
   });
-  
+
   if (key) {
-listAllSpan = document.querySelectorAll("#words span");
+    listAllSpan = document.querySelectorAll("#words span");
   }
 }
 
@@ -95,6 +95,9 @@ input.addEventListener("keydown", (e) => {
       currectWord++;
     } else {
       wrongWord++;
+
+      currentElement.classList.remove("success");
+      currentElement.classList.add("danger");
     }
 
     ++countWord;
